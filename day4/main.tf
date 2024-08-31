@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "test" {
-  bucket = "awsterraformday4"
+  bucket = "awsterraformdayyy4"
   
   
 }
