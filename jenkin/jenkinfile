@@ -1,0 +1,23 @@
+node {
+    stage ('clone'){
+        git branch: 'main', url: 'https://github.com/revanth0104/TERRAFORM_FILES.git'
+    }
+    stage('init') {
+        dir("jenkin"){
+        sh "terraform init"
+        }
+    }
+    stage('plan') {
+        dir ("jenkin") {
+        sh "terraform plan"     
+            
+        }
+            }
+
+    stage('apply') {
+        dir ("jenkin") {
+        sh "terraform destroy -auto-approve"   
+        
+        }
+    }
+}
