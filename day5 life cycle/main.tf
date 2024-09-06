@@ -5,7 +5,7 @@ resource "aws_instance" "test" {
     key_name = "projectkey"
     
   tags = {
-    Name = "test2"
+    Name = "test4"
   }
 }
 #below examples are for lifecycle meta_arguments 
