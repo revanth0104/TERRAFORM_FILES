@@ -7,7 +7,7 @@ resource "aws_instance" "test" {
   tags = {
     Name = "test1"
   }
-
+}
 #below examples are for lifecycle meta_arguments 
 
    #lifecycle {
@@ -22,4 +22,4 @@ resource "aws_instance" "test" {
 #   lifecycle {
 #     ignore_changes = [tags,] #This means that Terraform will never update the object but will be able to create or destroy it.
 #   }
-}
+
